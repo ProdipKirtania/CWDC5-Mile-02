@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ball {
+            0%{
+                transform: translate(280px, 12px);
+            }
+            25%{
+                transform: translateY(-224px);
+            }
+            50%{
+                transform: translate(280px, -240px);
+            }
+        }
+        .container {
+            background-color: rgb(0, 255, 255);
+            height: 700px;
+            border: 1px solid rgb(0, 255, 255);
+        }
+    
+        .box-1 {
+            position: relative;
+            top: 500px;
+            left: 500px;
+            transform: rotate(45deg);
+            background-color: palegreen;
+            width: 50px;
+            height: 12px;
+        }
+    
+        .box-2 {
+            position: relative;
+            top: 500px;
+            left: 800px;
+            transform: rotate(-45deg);
+            background-color: rgb(134, 129, 82);
+            width: 50px;
+            height: 12px;
+        }
+    
+        .box-3 {
+            position: relative;
+            top: 200px;
+            left: 800px;
+            transform: rotate(45deg);
+            background-color: salmon;
+            width: 50px;
+            height: 12px;
+        }
+    
+        .box-4 {
+            position: relative;
+            top: 200px;
+            left: 500px;
+            transform: rotate(-45deg);
+            background-color: orangered;
+            width: 50px;
+            height: 12px;
+        }
+    
+        .ball {
+            position: relative;
+            top: 420px;
+            left: 520px;
+            background-color: royalblue;
+            height: 35px;
+            width: 35px;
+            border: 1px solid rgb(118, 225, 65);
+            border-radius: 50%;
+            animation: ball 3s ease-in 0s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">One</div>
+        <div class="box-2">Two</div>
+        <div class="box-3">Three</div>
+        <div class="box-4">Four</div>
+        <div class="ball">Five</div>
+    </div>
+</body>
+</html>
